@@ -7,7 +7,9 @@ dubbo:
     name: dubbo-provider
   ## 配置注册中心
   registry:
-    address: multicast://224.5.6.7:1234
+    address: zookeeper://175.178.108.7:2181
+    ## 设置连接超时时间 10s
+    timeout: 10000
   ## 协议
   protocol:
     name: dubbo
