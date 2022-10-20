@@ -1,0 +1,16 @@
+server:
+  port: 8001
+
+## 配置dubbo
+dubbo:
+  application:
+    name: dubbo-provider
+  ## 配置注册中心
+  registry:
+    address: multicast://224.5.6.7:1234
+  ## 协议
+  protocol:
+    name: dubbo
+    port: 20880
+  scan:
+    base-packages: com.tony.dubbo.provider.service
